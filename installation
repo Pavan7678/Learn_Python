@@ -1,0 +1,11 @@
+  28  sudo yum -y install wget make gcc openssl-devel bzip2-devel
+  29  cd /tmp/
+  30  wget https://www.python.org/ftp/python/3.6.12/Python-3.6.12.tgz
+  31  tar xzf Python-3.6.12.tgz
+  32  cd Python-3.6.12/
+  33  ./configure --enable-optimizations
+  34  sudo make altinstall
+  35  sudo ln -sfn /usr/local/bin/python3.6 /usr/bin/python3.6
+   36  sudo ln -sfn /usr/local/bin/pip3.6 /usr/bin/pip3.6
+   37  python3.6 -V
+   38  history
